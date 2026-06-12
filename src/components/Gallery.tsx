@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
@@ -8,14 +8,20 @@ import { siteConfig } from "@/data/siteConfig";
 export default function Gallery() {
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null);
 
+  useEffect(() => {
+    document.body.style.overflow = activeImageIndex === null ? "" : "hidden";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [activeImageIndex]);
+
   const openLightbox = (index: number) => {
     setActiveImageIndex(index);
-    document.body.style.overflow = "hidden"; // Prevent background scroll
   };
 
   const closeLightbox = () => {
     setActiveImageIndex(null);
-    document.body.style.overflow = ""; // Restore scroll
   };
 
   const nextImage = () => {

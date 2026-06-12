@@ -55,7 +55,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed font-light">
-              Bangalore's trusted destination for premium vehicle care. We specialize in transforming, protecting, and preserving luxury cars, SUVs, and motorcycles.
+              Bangalore&apos;s trusted destination for premium vehicle care. We specialize in transforming, protecting, and preserving luxury cars, SUVs, and motorcycles.
             </p>
             <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider block mt-2">
               Where Protection Meets Perfection

@@ -150,7 +150,7 @@ export default function Header() {
               </a>
               <a
                 href="#contact"
-                onClick={(e) => {
+                onClick={() => {
                   setIsMobileMenuOpen(false);
                   const contact = document.querySelector("#contact");
                   if (contact) {

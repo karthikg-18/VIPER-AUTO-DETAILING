@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, MessageSquare, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 
 export default function Contact() {
@@ -45,7 +45,7 @@ export default function Contact() {
             Give Your Vehicle The Care It Deserves
           </h2>
           <p className="text-gray-400 text-sm sm:text-base font-light leading-relaxed max-w-2xl mx-auto">
-            Protect your investment with Bangalore's premium auto detailing specialists. Whether you need a professional wash, ceramic coating, interior detailing, or complete paint protection, VIPER AUTO DETAILING delivers results that exceed expectations.
+            Protect your investment with Bangalore&apos;s premium auto detailing specialists. Whether you need a professional wash, ceramic coating, interior detailing, or complete paint protection, VIPER AUTO DETAILING delivers results that exceed expectations.
           </p>
           <div className="h-1 w-20 bg-primary mx-auto rounded mt-6" />
         </div>

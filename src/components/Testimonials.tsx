@@ -75,7 +75,7 @@ export default function Testimonials() {
 
                 {/* Review Text */}
                 <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-6 font-light italic relative z-10">
-                  "{testimonial.review}"
+                  &ldquo;{testimonial.review}&rdquo;
                 </p>
               </div>
 
